@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/edit_bg">
+
+    <TextView
+	    android:id="@+id/new_head"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+   		android:gravity="center_horizontal"
+    	android:text="SUNDAY / MAY 25 / 2015"
+    	android:textColor="#000000"
+    	android:textSize="25sp"/>
+    
+    <View
+    	android:id="@+id/new_line"
+    	android:layout_width="300dp"
+    	android:layout_height="3dp"
+    	android:layout_below="@+id/new_head"
+    	android:layout_marginTop="10dp"
+    	android:layout_centerHorizontal="true"
+    	android:background="#000000"/>
+    
+    <EditText
+    	android:id="@+id/new_dairy"
+   		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="26dp"
+    	android:layout_marginRight="26dp"
+    	android:layout_below="@+id/new_line"
+    	android:layout_marginTop="10dp"
+    	android:hint="How's going on today?"
+    	android:lineSpacingExtra="5dp"
+    	android:textSize="20sp"
+    	android:background="@null"
+    	android:textCursorDrawable="@null"/>
+    
+    <Button
+    	android:id="@+id/done_btn"
+    	android:layout_width="60dp"
+    	android:layout_height="30dp"
+    	android:background="@drawable/done_btn"
+    	android:layout_alignRight="@+id/new_dairy"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginBottom="16dp"/>
+    
+
+</RelativeLayout>

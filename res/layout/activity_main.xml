@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#F2F1ED">
+
+    <ListView
+        android:id="@+id/show1_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="65dp"
+        android:divider="#F2F1ED"
+        android:dividerHeight="6dp"/>
+    
+    <Button
+        android:id="@+id/add_today_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_today_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"/>
+
+</RelativeLayout>
